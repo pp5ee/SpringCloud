@@ -1,0 +1,24 @@
+project:
+    version: "1.0-SNAPSHOT"
+spring:
+  session:
+    store-type: none
+  application:
+    name: eurekaclient
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8989/eureka/
+    healthcheck:
+      enabled: true
+    instance:
+        lease-expiration-duration-in-seconds: 30
+        lease-renewal-interval-in-seconds: 10
+        non-secure-port: ${server.port}
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+management:
+  server:
+    port: 9006
