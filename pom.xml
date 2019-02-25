@@ -9,11 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-server</module>
-        <module>eureka-client</module>
+        <module>eureka-client1</module>
         <module>eureka-client2</module>
+        <module>eureka-client-ribbon</module>
     </modules>
     <name>spring cloud and swagger demo</name>
-    <description>Eureka 服务注册与发现</description>
+    <description>Spring Cloud 微服务框架demos</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -24,6 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <spring.cloud.version>Finchley.SR2</spring.cloud.version>
         <spring.boot.version>2.0.6.RELEASE</spring.boot.version>
         <swagger.version>2.9.2</swagger.version>
         <lombok.version>1.16.6</lombok.version>
@@ -33,14 +35,9 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Finchley.SR2</version>
+            <version>${spring.cloud.version}</version>
             <type>pom</type>
             <scope>import</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>${spring.boot.version}</version>
         </dependency>
         <!--SWAGGER2 START-->
         <dependency>
@@ -60,6 +57,14 @@
         <!--SWAGGER2 END-->
     </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+    </dependencies>
     <build>
         <plugins>
             <plugin>
