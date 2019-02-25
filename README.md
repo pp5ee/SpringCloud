@@ -6,7 +6,7 @@
 
 该项目是作者在学习SpringCloud时写的demos,主要目的是快速接入SpringCloud，降低学习门槛,代码有问题请提ISSUE
 
-## 1.SpringBoot RestFul实例
+## 1.SpringBoot RestFul+Swagger2实例
 
 ## 2.SpringCloud Eureka服务发现与注册
 
