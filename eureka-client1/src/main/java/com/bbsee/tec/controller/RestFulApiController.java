@@ -50,20 +50,12 @@ public class RestFulApiController {
     }
 
     /**
-     * RestTemplate测试
-     * RestTemplate是Spring Resource中的一个访问第三方RESTFul API的网络请求框架
+     *
      * @param url
      * @return
      */
     @RequestMapping(value = "/restTemplate",method = {RequestMethod.GET,RequestMethod.POST},headers = {})
-    public String getResponseViTemplate(@ApiParam(name = "网站域名")@RequestParam("remoteUrl")String url){
-        /**
-         * RESTTEMPLATE 用于消费REST APIS,支持 head、get、post、put、delete、options等方法
-         * 分别对应：headeForHeaders()/getForObjects()/postForObject()/put()/delete()
-         */
-        RestTemplate restTemplate=new RestTemplate();
-        return restTemplate.getForObject(url,String.class);
+    public String getResponseViTemplate(@ApiParam(name = "网站域名")@RequestParam("url")String url){
+        return "消息来自与client1,参数："+url;
     }
-
-
 }
