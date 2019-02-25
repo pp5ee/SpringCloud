@@ -1,6 +1,6 @@
 # **SpringCloud基础教程(demo版)**
 
-[SpringCloud Documentation](https://spring.io/docs)
+[SpringCloud Documentation](http://cloud.spring.io/spring-cloud-static/spring-cloud.html#_features)
 
 [SpringCloud中文](https://springcloud.cc/)
 
