@@ -12,7 +12,7 @@
 
 ## 3.SpringCloud Ribbon负载均衡配置
 
-## 4.申明式调用Fegin配置
+## 4.声明式调用Fegin配置
 
 ## 5.熔断器Hystrix配置
 
