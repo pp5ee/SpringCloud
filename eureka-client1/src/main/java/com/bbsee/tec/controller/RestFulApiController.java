@@ -57,6 +57,10 @@ public class RestFulApiController {
      */
     @RequestMapping(value = "/restTemplate",method = {RequestMethod.GET,RequestMethod.POST},headers = {})
     public String getResponseViTemplate(@ApiParam(name = "网站域名")@RequestParam("remoteUrl")String url){
+        /**
+         * RESTTEMPLATE 用于消费REST APIS,支持 head、get、post、put、delete、options等方法
+         * 分别对应：headeForHeaders()/getForObjects()/postForObject()/put()/delete()
+         */
         RestTemplate restTemplate=new RestTemplate();
         return restTemplate.getForObject(url,String.class);
     }
