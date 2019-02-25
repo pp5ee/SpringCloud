@@ -16,7 +16,6 @@ import java.io.IOException;
 @Controller
 @ApiIgnore
 public class IndexController {
-
     @RequestMapping("/")
     public void welcome(HttpServletResponse response) throws IOException {
         response.sendRedirect("/swagger-ui.html");
