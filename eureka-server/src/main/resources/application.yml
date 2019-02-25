@@ -1,12 +1,15 @@
 server:
+#本地实例运行端口
   port: 8989
-  #本地实例运行端口
+
 
 eureka:
   instance:
   #设置注册中心主机名
     hostname: localhost
+    #指示eureka客户端需要向eureka服务器发送心跳以指示它仍然存在的频率（以秒为单位）。
     lease-renewal-interval-in-seconds: 1
+    #指示eureka服务器在接收到最后一个心跳之后等待的时间（秒），然后才能从此视图中(eureka server的注册表)删除此实例，并禁止此实例的流量以提高系统的可用性。
     lease-expiration-duration-in-seconds: 2
   client:
   #指示该客户端是否应从eureka服务器获取eureka注册表信息,默认为true
@@ -29,8 +32,8 @@ eureka:
   #到Eureka仪表板（相对于servlet路径）的路径。默认为“/”。
     path: "/"
   server:
-    #关闭eureka自我保护,防止自己注册自己，默认情况下是开启的
+    #关闭eureka自我保护,防止eureka server自己注册自己，默认情况下是开启的,搭建时需要注意,不关闭可能引起Server不踢出已关停节点的问题
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 60000
-
+    #清理间隔（单位毫秒，默认是60*1000）
+    eviction-interval-timer-in-ms: 40000
 debug: true
