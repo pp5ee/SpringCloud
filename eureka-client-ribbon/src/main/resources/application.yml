@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ribbon-client
+server:
+  port: 8082
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+          defaultZone: http://localhost:8989/eureka/
+    instance:
+            lease-expiration-duration-in-seconds: 30
+            lease-renewal-interval-in-seconds: 10
+            non-secure-port: ${server.port}
