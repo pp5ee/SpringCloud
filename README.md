@@ -4,7 +4,7 @@
 
 [SpringCloud中文](https://springcloud.cc/)
 
-该项目是作者在学习SpringCloud时写的demos,主要目的是快速接入SpringCloud，降低学习门槛,代码有问题请提ISSUE或e-mail：rolltion.zhang@foxmail.com,希望对你的学习有帮助
+该项目是作者在学校SpringCloud时写的demos,主要目的是快速接入SpringCloud，降低学习门槛,代码有问题请提ISSUE
 
 ## 1.SpringBoot RestFul实例
 
@@ -23,3 +23,5 @@
 ## 8 .Spring Cloud Zuul 网关
 
 ## 9.SpringCloud OAuth2
+
+![img](https://spring.io/img/homepage/diagram-distributed-systems.svg)
