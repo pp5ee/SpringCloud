@@ -13,7 +13,7 @@
 
 该项目是作者在学校SpringCloud时写的demos,主要目的是快速接入SpringCloud，降低学习门槛,代码有问题请提ISSUE
 
-不定期更新![img](file:///C:\Users\Lenovo\AppData\Roaming\Tencent\TIM\Temp\SFD$A`%U5}LTZ$[S_NMZ({V.gif)
+不定期更新![](C:\Users\Lenovo\Desktop\SFD$A`%U5}LTZ$[S_NMZ({V.gif)
 
 ## 1.SpringBoot RestFul实例
 
